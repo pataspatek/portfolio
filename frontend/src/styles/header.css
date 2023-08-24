@@ -1,31 +1,82 @@
+/* Header CSS */
+
+:root {
+    --header-font-size: 24px;
+    --header-height: calc(var(--header-font-size) * 5);
+    --header-icon-height: calc(var(--header-font-size) * 4);
+    --header-social-icon-height: calc(var(--header-font-size) * 2)
+}
+
+/* Container styles */
 .header-container {
-    background-color: grey;
-    font-size: 24px;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    padding: 2em 4em;
+    height: var(--header-height);
+    padding: 0 5%;
+    background-color: var(--primary-color);
 }
 
-/* The whole left side of the header */
-.logo-link {
+.header {
+    max-width: 1040px;
+    margin: 0 auto;
+
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+/* Profile picture styles */
+.profile-picture-link,
+.profile-picture-image {
+    height: var(--header-icon-height);
+    display: flex;
     justify-content: center;
-
-    margin: auto auto auto 0;
-}
-
-.logo-icon {
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 0.5em;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    margin: auto 0;
+    border-radius: 10px;
+}
+
+.profile-picture-image {
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+
+.profile-picture-image:hover {
+    opacity: 100%;
+}
+
+
+/* Navigation styles */
+.nav-links-container {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    height: var(--header-height);
+    padding: 0 1em;
+}
+
+.nav-link {
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--header-font-size);
+    color: var(--text-color-light);
+}
+
+/* Social links styles */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    list-style: none;
+}
+
+.social-item {
+    padding: 0 0.5em;
+}
+
+.social-icon {
+    width: var(--header-social-icon-height);
+    color: var(--text-color-light);
 }
