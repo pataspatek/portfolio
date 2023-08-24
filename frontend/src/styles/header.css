@@ -3,15 +3,37 @@
 :root {
     --header-font-size: 24px;
     --header-height: calc(var(--header-font-size) * 5);
-    --header-icon-height: calc(var(--header-font-size) * 4);
-    --header-social-icon-height: calc(var(--header-font-size) * 2)
+    --header-photo-height: calc(var(--header-font-size) * 3.5);
+    --header-social-icon-height: calc(var(--header-font-size) * 2);
+
+    --header-hover-transition: all 0.2s ease;
 }
 
 /* Container styles */
 .header-container {
     height: var(--header-height);
     padding: 0 5%;
-    background-color: var(--primary-color);
+    background: linear-gradient(300deg, var(--secondary-color-light), var(--primary-color), var(--secondary-color-dark));
+    background-size: 180% 180%;
+    animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
 }
 
 .header {
@@ -25,21 +47,21 @@
 /* Profile picture styles */
 .profile-picture-link,
 .profile-picture-image {
-    height: var(--header-icon-height);
+    height: var(--header-photo-height);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto 0;
     border-radius: 10px;
+    transition: var(--header-hover-transition);
 }
 
 .profile-picture-image {
-    opacity: 80%;
-    transition: all 0.3s ease;
+    opacity: 70%;
 }
 
 .profile-picture-image:hover {
-    opacity: 100%;
+    opacity: 90%;
 }
 
 
@@ -49,18 +71,24 @@
     list-style: none;
 }
 
-.nav-item {
-    height: var(--header-height);
-    padding: 0 1em;
-}
-
+.nav-item,
 .nav-link {
-    height: var(--header-height);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--header-font-size);
     color: var(--text-color-light);
+    padding: 0 0.4em;
+    transition: var(--header-hover-transition)
+}
+
+.nav-link {
+    opacity: 70%;
+
+}
+
+.nav-link:hover {
+    opacity: 100%;
 }
 
 /* Social links styles */
@@ -72,11 +100,18 @@
     list-style: none;
 }
 
-.social-item {
-    padding: 0 0.5em;
-}
-
+.social-item,
 .social-icon {
     width: var(--header-social-icon-height);
     color: var(--text-color-light);
+    padding: 0 0.6em;
+    transition: var(--header-hover-transition)
+}
+
+.social-icon {
+    opacity: 70%;
+}
+
+.social-icon:hover {
+    opacity: 100%;
 }
