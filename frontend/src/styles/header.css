@@ -50,6 +50,10 @@
     transition: var(--header-hover-transition);
 }
 
+.profile-picture-link {
+    height: var(--header-height);
+}
+
 .profile-picture-image {
     opacity: 70%;
 }
@@ -59,11 +63,16 @@
     transform: scale(1.1);
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+}
 
 /* Navigation styles */
 .nav-links-container {
     display: flex;
     list-style: none;
+    height: var(--header-height);
 }
 
 .nav-item,
@@ -110,4 +119,78 @@
 .social-icon:hover {
     opacity: 100%;
     transform: scale(1.1);
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+.icon-collapsed-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+}
+
+
+.icon-collapsed {
+    display: block;
+    opacity: 80%;
+    transition: var(--header-hover-transition);
+}
+
+.icon-collapsed:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+    background-color: var(--text-color-light);
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 870px) {
+    .nav-container {
+        display: none;
+    }
+
+    #nav-toggle:checked + .nav-container {
+        display: flex; /* Show navigation container when the input is checked */
+        flex-direction: column; /* Stack navigation items vertically */
+        background-color: rgba(0, 0, 0, 0.8); /* Background for mobile navigation */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999; /* Make sure it's above other content other than toggle button */
+        padding: 2rem; /* Add some padding for spacing */
+    }
+
+    #nav-toggle:checked + .nav-container > .nav-links-container {
+        flex-direction: column;
+    }
+
+    .icon-collapsed-container {
+        display: flex;
+        z-index: 1000;
+    }
+
+    #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(2) {
+        opacity: 0;
+    }
 }
