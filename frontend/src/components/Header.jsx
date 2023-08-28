@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 
 import '../styles/header.css'
 
 function Header() {
+
+    const closeNavContainer = () => {
+        const navToggle = document.getElementById("nav-toggle");
+        if(navToggle) {
+            navToggle.checked = false;
+        }
+    }
+
     return (
         <div className="header-container">
             <div className="header">
@@ -19,16 +27,16 @@ function Header() {
                     {/* Navigation Links */}
                     <ul className="nav-links-container">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link">Home</Link>
+                            <Link to="/" className="nav-link" onClick={closeNavContainer}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/projects" className="nav-link">Projects</Link>
+                            <Link to="/projects" className="nav-link" onClick={closeNavContainer}>Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/about" className="nav-link">About</Link>
+                            <Link to="/about" className="nav-link" onClick={closeNavContainer}>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Contact</Link>
+                            <Link to="/contact" className="nav-link" onClick={closeNavContainer}>Contact</Link>
                         </li>
                     </ul>
                     {/* Social Links */}
