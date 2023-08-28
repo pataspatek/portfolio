@@ -9,6 +9,11 @@
 
     /* Transition for hover effects */
     --header-hover-transition: all 0.3s ease;
+
+    --header-initial-opacity: 0.7;
+    --header-hover-opacity: 1;
+
+    --header-transform-scale: 1.05;
 }
 
 /* Container styles */
@@ -63,13 +68,14 @@
 
 .profile-picture-image {
     /* Initial profile picture opacity */
-    opacity: 70%;
+    opacity: var(--header-initial-opacity);
 }
 
 .profile-picture-image:hover {
     /* Profile picture hover effect */
     opacity: 80%;
-    transform: scale(1.1);
+    transform: scale(var(--header-transform-scale));
+    transform-origin: center;
 }
 
 /* Navigation styles */
@@ -102,13 +108,14 @@
 
 .nav-link {
     /* Initial navigation link opacity */
-    opacity: 70%;
+    opacity: var(--header-initial-opacity);
 }
 
 .nav-link:hover {
     /* Navigation link hover effect */
-    opacity: 100%;
-    transform: scale(1.1);
+    opacity: var(--header-hover-opacity);
+    transform: scale(var(--header-transform-scale));
+    transform-origin: center;
 }
 
 /* Social links styles */
@@ -132,13 +139,14 @@
 
 .social-icon {
     /* Initial social icon opacity */
-    opacity: 70%;
+    opacity: var(--header-initial-opacity);
 }
 
 .social-icon:hover {
     /* Social icon hover effect */
-    opacity: 100%;
-    transform: scale(1.1);
+    opacity: var(--header-hover-opacity);
+    transform: scale(var(--header-transform-scale));
+    transform-origin: center;
 }
 
 /* Collapse toggle */
@@ -157,29 +165,29 @@
     margin-left: auto;
 }
 
-
 .icon-collapsed {
     /* Collapsed navigation icon layout */
     display: block;
-    opacity: 80%;
+    opacity: var(--header-initial-opacity);
     transition: var(--header-hover-transition);
 }
 
 .icon-collapsed:hover {
     /* Collapsed navigation icon hover effect */
-    opacity: 100%;
-    transform: scale(1.1);
+    opacity: var(--header-hover-opacity);
+    transform: scale(var(--header-transform-scale));
+    transform-origin: center;
     cursor: pointer;
 }
 
 .line {
     /* Line styles for collapsed navigation icon */
-    width: 30px;
-    height: 5px;
+    width: 50px;
+    height: 8px;
     background-color: var(--text-color-light);
-    margin: 5px;
+    margin: 8px;
     border-radius: 3px;
-    transition: all .5s ease-in-out;
+    transition: var(--header-hover-transition)
 }
 
 /* Mobile responsive styles */
@@ -216,11 +224,11 @@
 
     /* Adjust collapsed icon animation */
     #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
+        transform: translateY(16px) rotate(45deg);
     }
 
     #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(3) {
-        transform: translateY(-10px) rotate(-225deg);
+        transform: translateY(-16px) rotate(-45deg);
     }
 
     #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(2) {
