@@ -6,7 +6,7 @@
     --header-photo-height: calc(var(--header-font-size) * 3.5);
     --header-social-icon-height: calc(var(--header-font-size) * 2);
 
-    --header-hover-transition: all 0.2s ease;
+    --header-hover-transition: all 0.3s ease;
 }
 
 /* Container styles */
@@ -14,7 +14,7 @@
     height: var(--header-height);
     padding: 0 5%;
     background: linear-gradient(300deg, var(--secondary-color-light), var(--primary-color), var(--secondary-color-dark));
-    background-size: 180% 180%;
+    background-size: 200% 200%;
     animation: gradient-animation 20s ease infinite;
 }
 
@@ -22,14 +22,8 @@
     0% {
       background-position: 0% 50%;
     }
-    25% {
-      background-position: 50% 50%;
-    }
     50% {
       background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 50%;
     }
     100% {
       background-position: 0% 50%;
@@ -61,7 +55,8 @@
 }
 
 .profile-picture-image:hover {
-    opacity: 90%;
+    opacity: 80%;
+    transform: scale(1.1);
 }
 
 
@@ -84,11 +79,11 @@
 
 .nav-link {
     opacity: 70%;
-
 }
 
 .nav-link:hover {
     opacity: 100%;
+    transform: scale(1.1);
 }
 
 /* Social links styles */
@@ -114,4 +109,5 @@
 
 .social-icon:hover {
     opacity: 100%;
+    transform: scale(1.1);
 }
