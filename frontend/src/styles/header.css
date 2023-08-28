@@ -201,6 +201,7 @@
         /* Show navigation container when toggle is checked */
         display: flex; /* Show navigation container when the input is checked */
         flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
         background-color: rgba(0, 0, 0, 0.8); /* Background for mobile navigation */
         position: fixed;
         top: 0;
@@ -208,7 +209,22 @@
         right: 0;
         bottom: 0;
         z-index: 999; /* Make sure it's above other content other than toggle button */
-        padding: 2rem; /* Add some padding for spacing */
+    }
+
+    #nav-toggle:checked + .nav-container > .nav-links-container {
+        margin-top: var(--header-height);
+    }
+
+    #nav-toggle:checked + .nav-container > .nav-links-container .nav-item {
+        padding-top: 1em;
+    }
+
+    #nav-toggle:checked + .nav-container > .social-links-container {
+        margin-top: var(--header-height);
+    }
+
+    #nav-toggle:checked + .nav-container > .social-links-container .social-item {
+        padding: 1.5em;
     }
 
     /* Adjust navigation links layout for mobile */
