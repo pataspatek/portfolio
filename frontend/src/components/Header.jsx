@@ -7,25 +7,31 @@ function Header() {
     return (
         <div className="header-container">
             <div className="header">
-                <Link className="profile-picture-link">
-                    <img className="profile-picture-image" height="92px" src="profile-picture.jpg" alt="profile picture"/>
-                </Link>
+                {/* Profile Picture */}
+                <div className="profile-picture-container">
+                    <Link to="/" className="profile-picture-link">
+                        <img className="profile-picture-image" src="profile-picture.jpg" alt="profile picture"/>
+                    </Link>
+                </div>
+                {/* Navigation Toggle */}
                 <input type="checkbox" id="nav-toggle" />
                 <div className="nav-container">
+                    {/* Navigation Links */}
                     <ul className="nav-links-container">
                         <li className="nav-item">
-                            <Link className="nav-link">Home</Link>
+                            <Link to="/" className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link">Projects</Link>
+                            <Link to="/projects" className="nav-link">Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link">About</Link>
+                            <Link to="/about" className="nav-link">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link">Contact</Link>
+                            <Link to="/contact" className="nav-link">Contact</Link>
                         </li>
                     </ul>
+                    {/* Social Links */}
                     <ul className="social-links-container">
                         <li className="social-item">
                             <a className="social-link" href="">
@@ -50,8 +56,9 @@ function Header() {
                         </li>
                     </ul>
                 </div>
+                {/* Collapsed Navigation Icon */}
                 <div className="icon-collapsed-container">
-                    <label for="nav-toggle" className="icon-collapsed">
+                    <label htmlFor="nav-toggle" className="icon-collapsed">
                         <div className="line"></div>
                         <div className="line"></div>
                         <div className="line"></div>

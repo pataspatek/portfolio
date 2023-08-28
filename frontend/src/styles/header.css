@@ -1,23 +1,29 @@
 /* Header CSS */
 
 :root {
+    /* Header dimensions and sizes */
     --header-font-size: 24px;
     --header-height: calc(var(--header-font-size) * 5);
     --header-photo-height: calc(var(--header-font-size) * 3.5);
     --header-social-icon-height: calc(var(--header-font-size) * 2);
 
+    /* Transition for hover effects */
     --header-hover-transition: all 0.3s ease;
 }
 
 /* Container styles */
 .header-container {
+    /* Container height and position */
     height: var(--header-height);
     padding: 0 5%;
+
+    /* Gradient background animation */
     background: linear-gradient(300deg, var(--secondary-color-light), var(--primary-color), var(--secondary-color-dark));
     background-size: 200% 200%;
     animation: gradient-animation 20s ease infinite;
 }
 
+/* Gradient animation keyframes */
 @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -30,17 +36,17 @@
     }
 }
 
+/* Header container layout */
 .header {
     max-width: 1040px;
     margin: 0 auto;
-
     display: flex;
-    justify-content: space-between;
 }
 
 /* Profile picture styles */
-.profile-picture-link,
+.profile-picture-container,
 .profile-picture-image {
+    /* Profile picture dimensions and styles */
     height: var(--header-photo-height);
     display: flex;
     justify-content: center;
@@ -50,26 +56,33 @@
     transition: var(--header-hover-transition);
 }
 
-.profile-picture-link {
+.profile-picture-container {
+    /* Adjust profile picture container height */
     height: var(--header-height);
 }
 
 .profile-picture-image {
+    /* Initial profile picture opacity */
     opacity: 70%;
 }
 
 .profile-picture-image:hover {
+    /* Profile picture hover effect */
     opacity: 80%;
     transform: scale(1.1);
 }
 
+/* Navigation styles */
 .nav-container {
+    /* Navigation container layout */
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Navigation styles */
 .nav-links-container {
+    /* Navigation links layout */
     display: flex;
     list-style: none;
     height: var(--header-height);
@@ -77,6 +90,7 @@
 
 .nav-item,
 .nav-link {
+    /* Navigation item styles */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,16 +101,19 @@
 }
 
 .nav-link {
+    /* Initial navigation link opacity */
     opacity: 70%;
 }
 
 .nav-link:hover {
+    /* Navigation link hover effect */
     opacity: 100%;
     transform: scale(1.1);
 }
 
 /* Social links styles */
 .social-links-container {
+    /* Social links container layout */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +123,7 @@
 
 .social-item,
 .social-icon {
+    /* Social item and icon dimensions */
     width: var(--header-social-icon-height);
     color: var(--text-color-light);
     padding: 0 0.6em;
@@ -113,40 +131,49 @@
 }
 
 .social-icon {
+    /* Initial social icon opacity */
     opacity: 70%;
 }
 
 .social-icon:hover {
+    /* Social icon hover effect */
     opacity: 100%;
     transform: scale(1.1);
 }
 
+/* Collapse toggle */
 #nav-toggle {
     position: absolute;
     top: -100px;
 }
 
+/* Collapsed Navigation Icon */
 .icon-collapsed-container {
+    /* Collapsed navigation icon container layout */
     display: none;
     justify-content: center;
     align-items: center;
     height: var(--header-height);
+    margin-left: auto;
 }
 
 
 .icon-collapsed {
+    /* Collapsed navigation icon layout */
     display: block;
     opacity: 80%;
     transition: var(--header-hover-transition);
 }
 
 .icon-collapsed:hover {
+    /* Collapsed navigation icon hover effect */
     opacity: 100%;
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .line {
+    /* Line styles for collapsed navigation icon */
     width: 30px;
     height: 5px;
     background-color: var(--text-color-light);
@@ -155,12 +182,15 @@
     transition: all .5s ease-in-out;
 }
 
+/* Mobile responsive styles */
 @media screen and (max-width: 870px) {
     .nav-container {
+        /* Hide navigation container on smaller screens */
         display: none;
     }
 
     #nav-toggle:checked + .nav-container {
+        /* Show navigation container when toggle is checked */
         display: flex; /* Show navigation container when the input is checked */
         flex-direction: column; /* Stack navigation items vertically */
         background-color: rgba(0, 0, 0, 0.8); /* Background for mobile navigation */
@@ -173,15 +203,18 @@
         padding: 2rem; /* Add some padding for spacing */
     }
 
+    /* Adjust navigation links layout for mobile */
     #nav-toggle:checked + .nav-container > .nav-links-container {
         flex-direction: column;
     }
 
+    /* Show collapsed icon on mobile */
     .icon-collapsed-container {
         display: flex;
         z-index: 1000;
     }
 
+    /* Adjust collapsed icon animation */
     #nav-toggle:checked ~ .icon-collapsed-container .line:nth-child(1) {
         transform: translateY(10px) rotate(225deg);
     }
