@@ -12,8 +12,6 @@
 
     --header-initial-opacity: 0.7;
     --header-hover-opacity: 1;
-
-    --header-transform-scale: 1.05;
 }
 
 /* Container styles */
@@ -74,8 +72,6 @@
 .profile-picture-image:hover {
     /* Profile picture hover effect */
     opacity: 80%;
-    transform: scale(var(--header-transform-scale));
-    transform-origin: center;
 }
 
 /* Navigation styles */
@@ -114,8 +110,6 @@
 .nav-link:hover {
     /* Navigation link hover effect */
     opacity: var(--header-hover-opacity);
-    transform: scale(var(--header-transform-scale));
-    transform-origin: center;
 }
 
 /* Social links styles */
@@ -145,8 +139,6 @@
 .social-icon:hover {
     /* Social icon hover effect */
     opacity: var(--header-hover-opacity);
-    transform: scale(var(--header-transform-scale));
-    transform-origin: center;
 }
 
 /* Collapse toggle */
@@ -175,8 +167,6 @@
 .icon-collapsed:hover {
     /* Collapsed navigation icon hover effect */
     opacity: var(--header-hover-opacity);
-    transform: scale(var(--header-transform-scale));
-    transform-origin: center;
     cursor: pointer;
 }
 
