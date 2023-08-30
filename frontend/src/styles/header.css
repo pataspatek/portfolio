@@ -6,12 +6,6 @@
     --header-height: calc(var(--header-font-size) * 5);
     --header-photo-height: calc(var(--header-font-size) * 3.5);
     --header-social-icon-height: calc(var(--header-font-size) * 2);
-
-    /* Transition for hover effects */
-    --header-hover-transition: all 0.3s ease;
-
-    --header-initial-opacity: 0.7;
-    --header-hover-opacity: 1;
 }
 
 /* Container styles */
@@ -41,7 +35,7 @@
     align-items: center;
     margin: auto 0;
     border-radius: 10px;
-    transition: var(--header-hover-transition);
+    transition: var(--hover-transition);
 }
 
 .profile-picture-container {
@@ -83,7 +77,7 @@
     font-size: var(--header-font-size);
     color: var(--text-color-light);
     padding: 0 0.4em;
-    transition: var(--header-hover-transition)
+    transition: var(--hover-transition)
 }
 
 .nav-link:hover {
@@ -107,7 +101,7 @@
     width: var(--header-social-icon-height);
     color: var(--text-color-light);
     padding: 0 0.6em;
-    transition: var(--header-hover-transition)
+    transition: var(--hover-transition)
 }
 
 .social-icon:hover {
@@ -134,7 +128,7 @@
 .icon-collapsed {
     /* Collapsed navigation icon layout */
     display: block;
-    transition: var(--header-hover-transition);
+    transition: var(--hover-transition);
 }
 
 .icon-collapsed:hover .line {
@@ -153,7 +147,7 @@
     background-color: var(--text-color-light);
     margin: 8px;
     border-radius: 3px;
-    transition: var(--header-hover-transition)
+    transition: var(--hover-transition)
 }
 
 /* Mobile responsive styles */

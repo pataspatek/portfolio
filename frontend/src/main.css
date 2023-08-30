@@ -9,11 +9,15 @@
     --background-color-dark: #56667e;
     --background-color-light: #ddf2ff;
     --call-to-action: #dda11d;
+    --call-to-action-hover: #b5890d;
 
     /* Font size */
     --title-font-size: 36px;
     --subtitle-font-size: 18px;
     --link-font-size: 20px;
+
+    --hover-transition: all 0.3s ease;
+
 }
 
 * {

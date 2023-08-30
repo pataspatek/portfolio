@@ -9,34 +9,27 @@
 /* Main hero section style */
 .hero {
     max-width: 1040px;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    min-height: 50vh;
 }
 
 /* Content section style */
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
     text-align: center;
-    flex: 1;
-    height: 100%;
-}
-
-.hero-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-title {
     font-size: var(--title-font-size);
     font-weight: bold;
     color: var(--text-color-dark);
+    margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -46,35 +39,38 @@
 
 /* Links container style */
 .hero-links-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 .hero-link-item {
     font-size: var(--link-font-size);
+    margin: 20px 8px;
 }
 
 .hero-link {
     background-color: var(--call-to-action); /* Red background */
     color: var(--text-color-dark);
+    padding: 10px 20px;
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
     white-space: nowrap;
-    transition: background-color 0.3s ease;
+    transition: var(--hover-transition)
 }
 
 .hero-link:hover {
-    background-color: red;
+    background-color: var(--call-to-action-hover);
 }
 
 /* Hero image style */
 .hero-img-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
 }
 
 .hero-img {
@@ -88,6 +84,5 @@
 
     .hero-links-container {
         flex-direction: column;
-        gap: 50px;
     }
 }
