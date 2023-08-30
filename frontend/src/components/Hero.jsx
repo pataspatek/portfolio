@@ -9,7 +9,11 @@ function Hero() {
                 <div className="hero-content">
                     <div className="hero-description">
                         <h1 className="hero-title">Patrik Pátek</h1>
-                        <p className="hero-subtitle">I am a developer</p>
+                        <p className="hero-subtitle">
+                            Meet Patrik Pátek, a self-taught programmer who defied conventional education. 
+                            With an insatiable curiosity, they delved into coding, mastering languages like Python,
+                            JavaScript, C++, and Java.
+                        </p>
                     </div>
                     <div className="hero-links-container">
                         <div className="hero-link-item">
