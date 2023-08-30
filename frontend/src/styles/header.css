@@ -45,7 +45,7 @@
 
 .profile-picture-image {
     /* Initial profile picture opacity */
-    opacity: var(--header-initial-opacity);
+    opacity: 70%;
 }
 
 .profile-picture-image:hover {
