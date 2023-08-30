@@ -21,12 +21,14 @@
     padding: 0 5%;
 
     /* Gradient background animation */
-    background: linear-gradient(300deg, var(--secondary-color-light), var(--primary-color), var(--secondary-color-dark));
+    background: var(--primary-color);
+}
+
+/*
     background-size: 200% 200%;
     animation: gradient-animation 20s ease infinite;
 }
 
-/* Gradient animation keyframes */
 @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -37,7 +39,7 @@
     100% {
       background-position: 0% 50%;
     }
-}
+} */
 
 /* Header container layout */
 .header {
@@ -101,14 +103,9 @@
     transition: var(--header-hover-transition)
 }
 
-.nav-link {
-    /* Initial navigation link opacity */
-    opacity: var(--header-initial-opacity);
-}
-
 .nav-link:hover {
     /* Navigation link hover effect */
-    opacity: var(--header-hover-opacity);
+    color: var(--call-to-action);
 }
 
 /* Social links styles */
@@ -130,14 +127,9 @@
     transition: var(--header-hover-transition)
 }
 
-.social-icon {
-    /* Initial social icon opacity */
-    opacity: var(--header-initial-opacity);
-}
-
 .social-icon:hover {
     /* Social icon hover effect */
-    opacity: var(--header-hover-opacity);
+    color: var(--call-to-action);
 }
 
 /* Collapse toggle */
@@ -159,13 +151,15 @@
 .icon-collapsed {
     /* Collapsed navigation icon layout */
     display: block;
-    opacity: var(--header-initial-opacity);
     transition: var(--header-hover-transition);
+}
+
+.icon-collapsed:hover .line {
+    background-color: var(--call-to-action);
 }
 
 .icon-collapsed:hover {
     /* Collapsed navigation icon hover effect */
-    opacity: var(--header-hover-opacity);
     cursor: pointer;
 }
 
@@ -191,7 +185,7 @@
         display: flex; /* Show navigation container when the input is checked */
         flex-direction: column; /* Stack navigation items vertically */
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.8); /* Background for mobile navigation */
+        background-color: rgba(0, 0, 0, 0.9); /* Background for mobile navigation */
         position: fixed;
         top: 0;
         left: 0;

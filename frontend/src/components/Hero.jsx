@@ -21,7 +21,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-img-container">
-                    <img className="hero-img" src="profile-picture.jpg" alt="profile-picture" />
+                    <img className="hero-img" src="img.jpg" alt="profile-picture" />
                 </div>
             </div>
         </div>
