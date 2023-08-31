@@ -8,14 +8,16 @@
     --text-color-gray: #808080;
     --background-color-dark: #56667e;
     --background-color-light: #ddf2ff;
+    --border-color: #d9d9d9;
     --call-to-action: #dda11d;
-    --call-to-action-hover: #b5890d;
+    --call-to-action-hover: #c0891a;
 
     /* Font size */
     --title-font-size: 36px;
     --subtitle-font-size: 18px;
     --link-font-size: 20px;
 
+    /* Hover transition */
     --hover-transition: all 0.3s ease;
 
 }

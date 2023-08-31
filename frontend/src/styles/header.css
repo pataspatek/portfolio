@@ -15,7 +15,7 @@
     padding: 0 5%;
 
     /* Gradient background animation */
-    background: var(--primary-color);
+    background: linear-gradient(to bottom, black 5%, var(--primary-color) 90%, white 100%);
 }
 
 /* Header container layout */
