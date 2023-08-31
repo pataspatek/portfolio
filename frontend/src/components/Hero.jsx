@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import '../styles/hero.css'
+import '../styles/hero.css';
 
 function Hero() {
     return (
@@ -25,7 +25,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-img-container">
-                    <img className="hero-img" src="img.jpg" alt="profile-picture" />
+                    <img className="hero-img" src="../../assets/hero-img.jpg" alt="hero-picture" />
                 </div>
             </div>
         </div>
