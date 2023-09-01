@@ -91,4 +91,8 @@
     .activity-links-container {
         flex-direction: column;
     }
+
+    .activity-content {
+        text-align: center;
+    }
 }
