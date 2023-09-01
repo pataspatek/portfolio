@@ -14,9 +14,9 @@
     display: flex;
     align-items: center;
     min-height: 30vh;
-
     background-color: var(--primary-color);
     border-radius: 20px;
+    transition: var(--hover-transition);
 }
 
 .activity:hover {
