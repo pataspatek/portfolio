@@ -73,10 +73,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
 }
 
 .hero-img {
     max-width: 100%;
+    transition: var(--hover-transition);
+    transform-origin: left bottom;
+}
+
+.hero-img:hover {
+    transform: scale(1.03);
 }
 
 @media screen and (max-width: 870px) {
