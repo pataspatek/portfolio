@@ -19,6 +19,10 @@
     border-radius: 20px;
 }
 
+.activity:hover {
+    background-color: var(--primary-color-light);
+}
+
 .odd-activity {
     flex-direction: row-reverse;
 }

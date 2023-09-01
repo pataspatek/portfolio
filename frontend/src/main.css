@@ -3,6 +3,7 @@
 :root {
     /* Color palette */
     --primary-color: #27374d;
+    --primary-color-light: #38507b;
     --text-color-light:#fff;
     --text-color-dark: #000;
     --text-color-gray: #808080;
