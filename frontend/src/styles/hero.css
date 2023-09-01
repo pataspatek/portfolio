@@ -50,6 +50,7 @@
 
 .hero-link-item {
     font-size: var(--link-font-size);
+    font-weight: bold;
     margin: 20px 8px;
 }
 
