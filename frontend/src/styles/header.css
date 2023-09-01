@@ -158,6 +158,12 @@
         display: none;
     }
 
+    #nav-toggle:checked ~ .icon-collapsed-container {
+        position: fixed;
+        top: 0;
+        right: 5%;
+    }
+
     #nav-toggle:checked + .nav-container {
         /* Show navigation container when toggle is checked */
         display: flex; /* Show navigation container when the input is checked */
@@ -170,6 +176,7 @@
         right: 0;
         bottom: 0;
         z-index: 999; /* Make sure it's above other content other than toggle button */
+        padding-bottom: 400px;
     }
 
     #nav-toggle:checked + .nav-container > .nav-links-container {
