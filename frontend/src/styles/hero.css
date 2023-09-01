@@ -79,7 +79,7 @@
 .hero-img {
     max-width: 100%;
     transition: var(--hover-transition);
-    transform-origin: left bottom;
+    transform-origin: center bottom;
 }
 
 .hero-img:hover {
