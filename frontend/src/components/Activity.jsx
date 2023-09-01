@@ -4,10 +4,10 @@ import '../styles/activity.css';
 import activities from '../activities-list';
 
 
-function Activity( {className, activityNumber} ) {
+function Activity( {activityNumber} ) {
     return (
         <div className="activity-container">
-            <div className={`activity ${className}`}>
+            <div className={`activity ${activityNumber % 2 === 1 ? 'odd-activity' : ""}`}>
                 <div className="activity-content">
                     <div className="activity-description">
                         <h1 className="activity-title">{activities[activityNumber]["name"]}</h1>

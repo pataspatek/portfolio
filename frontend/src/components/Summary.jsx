@@ -7,7 +7,7 @@ function Summary() {
     return (
         <div>
             {activities.map((activity, index) => (
-                <Activity key={index} activityNumber={index} className={index % 2 === 1 ? 'odd-activity' : ""} />
+                <Activity key={index} activityNumber={index} />
             ))}
         </div>
     )
