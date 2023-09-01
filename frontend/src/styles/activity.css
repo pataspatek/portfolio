@@ -1,0 +1,94 @@
+/* Activity CSS */
+
+/* activity container */
+.activity-container {
+    padding: 0 5%;
+}
+
+/* Main activity section style */
+.activity {
+    max-width: 800px; /* Other components have max-width 1040px */
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+
+.odd-activity {
+    flex-direction: row-reverse;
+}
+
+/* Content section style */
+.activity-content {
+    max-width: 400px;
+    text-align: start;
+}
+
+.activity-description {
+    padding-left: 20px;
+}
+
+.activity-title {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    color: var(--text-color-light);
+    margin-bottom: 20px;
+}
+
+.activity-subtitle {
+    font-size: var(--subtitle-font-size);
+    color: var(--text-color-gray);
+}
+
+/* Links container style */
+.activity-links-container {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.activity-link-item {
+    font-size: var(--link-font-size);
+    font-weight: bold;
+}
+
+.activity-link {
+    color: var(--call-to-action);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: var(--hover-transition)
+}
+
+.activity-link:hover {
+    background-color: var(--call-to-action-hover);
+    color: var(--text-color-light)
+}
+
+/* activity image style */
+.activity-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 870px) {
+    .activity {
+        flex-direction: column;
+    }
+
+    .activity-links-container {
+        flex-direction: column;
+    }
+}
