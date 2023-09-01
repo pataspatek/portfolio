@@ -98,9 +98,9 @@
 .social-item,
 .social-icon {
     /* Social item and icon dimensions */
-    width: var(--header-social-icon-height);
+    height: var(--header-social-icon-height);
     color: var(--text-color-light);
-    padding: 0 0.6em;
+    padding: 0 4px;
     transition: var(--hover-transition)
 }
 
