@@ -1,6 +1,6 @@
 import Activity from './Activity';
 
-import activities from '../activities-list';
+import activities from '../../assets/ActivitiesList';
 
 function Summary() {          
 

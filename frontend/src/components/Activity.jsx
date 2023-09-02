@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import '../styles/activity.css';
-import activities from '../activities-list';
+import activities from '../../assets/ActivitiesList';
 
 
 function Activity( {activityNumber} ) {

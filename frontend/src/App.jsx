@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import HomeView from "./views/HomeView"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeView />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
