@@ -17,7 +17,7 @@ function Activity( {activityNumber} ) {
                     </div>
                     <div className="activity-links-container">
                         <div className="activity-link-item">
-                            <Link to="/about" className="activity-link">Learn more...</Link>
+                            <Link to={`${activities[activityNumber]["linkTo"]}`} className="activity-link">Learn more...</Link>
                         </div>
                     </div>
                 </div>
