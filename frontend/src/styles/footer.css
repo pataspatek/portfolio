@@ -57,3 +57,9 @@
 .footer-link:hover {
     color: var(--call-to-action-hover);
 }
+
+@media screen and (max-width: 870px) {
+    .footer-links-container {
+        display: none;
+    }
+}
