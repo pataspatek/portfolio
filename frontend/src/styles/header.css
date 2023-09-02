@@ -54,14 +54,14 @@
 }
 
 /* Navigation styles */
-.nav-container {
+.nav-links-container {
     /* Navigation container layout */
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.nav-links-container {
+.nav-links-list {
     /* Navigation links layout */
     display: flex;
     list-style: none;
@@ -87,7 +87,7 @@
 }
 
 /* Social links styles */
-.social-links-container {
+.social-links-list {
     /* Social links container layout */
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@
 
 /* Mobile responsive styles */
 @media screen and (max-width: 870px) {
-    .nav-container {
+    .nav-links-container {
         /* Hide navigation container on smaller screens */
         display: none;
     }
@@ -164,7 +164,7 @@
         right: 5%;
     }
 
-    #nav-toggle:checked + .nav-container {
+    #nav-toggle:checked + .nav-links-container {
         /* Show navigation container when toggle is checked */
         display: flex; /* Show navigation container when the input is checked */
         flex-direction: column; /* Stack navigation items vertically */
@@ -179,24 +179,24 @@
         padding-bottom: 400px;
     }
 
-    #nav-toggle:checked + .nav-container > .nav-links-container {
+    #nav-toggle:checked + .nav-links-container > .nav-links-list {
         margin-top: var(--header-height);
     }
 
-    #nav-toggle:checked + .nav-container > .nav-links-container .nav-item {
+    #nav-toggle:checked + .nav-links-container > .nav-links-list .nav-item {
         padding-top: 1em;
     }
 
-    #nav-toggle:checked + .nav-container > .social-links-container {
+    #nav-toggle:checked + .nav-links-container > .social-links-list {
         margin-top: var(--header-height);
     }
 
-    #nav-toggle:checked + .nav-container > .social-links-container .social-item {
+    #nav-toggle:checked + .nav-links-container > .social-links-list .social-item {
         padding: 1.5em;
     }
 
     /* Adjust navigation links layout for mobile */
-    #nav-toggle:checked + .nav-container > .nav-links-container {
+    #nav-toggle:checked + .nav-links-container > .nav-links-list {
         flex-direction: column;
     }
 

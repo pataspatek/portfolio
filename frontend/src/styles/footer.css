@@ -1,0 +1,59 @@
+/* footer.css */
+
+:root {
+    --footer-height: 100px;
+}
+
+/* Container for the entire footer */
+.footer-container {
+    height: var(--footer-height);
+    padding: 0 5%; /* Adjust the padding as needed */
+
+    background-color: var(--background-color-dark); /* Background color for the footer */
+}
+  
+/* Main footer content */
+.footer {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Copyright text */
+.footer-copyright {
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+    color: var(--text-color-light)
+}
+
+/* Footer links container */
+.footer-links-container {
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+}
+  
+/* Footer links list */
+.footer-links-list {
+    list-style: none;
+    display: flex;
+}
+
+/* Individual footer link items */
+.footer-item {
+    margin-right: 20px; /* Adjust spacing between links */
+}
+  
+/* Styling for the links */
+.footer-link {
+    color: var(--text-color-light); /* Link text color */
+    transition: var(--hover-transition);
+}
+  
+  /* Hover effect for links (optional) */
+.footer-link:hover {
+    color: var(--call-to-action-hover);
+}

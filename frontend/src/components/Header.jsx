@@ -23,9 +23,9 @@ function Header() {
                 </div>
                 {/* Navigation Toggle */}
                 <input type="checkbox" id="nav-toggle" />
-                <div className="nav-container">
+                <div className="nav-links-container">
                     {/* Navigation Links */}
-                    <ul className="nav-links-container">
+                    <ul className="nav-links-list">
                         <li className="nav-item">
                             <Link to="/" className="nav-link" onClick={closeNavContainer}>Home</Link>
                         </li>
@@ -40,7 +40,7 @@ function Header() {
                         </li>
                     </ul>
                     {/* Social Links */}
-                    <ul className="social-links-container">
+                    <ul className="social-links-list">
                         <li className="social-item">
                             <a className="social-link" href="">
                                 <svg className="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
