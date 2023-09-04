@@ -22,7 +22,7 @@ function Activity( {activityNumber} ) {
                     </div>
                 </div>
                 <div className="activity-img-container">
-                    <img className="activity-img" src="../../assets/activity-img.jpg" alt="activity-picture" />
+                    <img className="activity-img" src={`${activities[activityNumber]["imgPath"]}`} alt="activity-picture" />
                 </div>
             </div>
         </div>
