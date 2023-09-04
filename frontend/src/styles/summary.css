@@ -1,1 +1,6 @@
 /* Summary CSS */
+
+.summary-container {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+}

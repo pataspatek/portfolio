@@ -18,7 +18,7 @@ function Header() {
                 {/* Profile Picture */}
                 <div className="profile-picture-container">
                     <Link to="/" className="profile-picture-link">
-                        <img className="profile-picture-image" src="../../assets/profile-picture.jpg" alt="profile picture"/>
+                        <img className="profile-picture-image" src="../../assets/images/profile-picture.jpg" alt="profile picture"/>
                     </Link>
                 </div>
                 {/* Navigation Toggle */}
