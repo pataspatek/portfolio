@@ -107,7 +107,7 @@
 
 .social-icon:hover {
     /* Social icon hover effect */
-    color: var(--call-to-action);
+    color: var(--call-to-action-hover);
 }
 
 /* Collapse toggle */
