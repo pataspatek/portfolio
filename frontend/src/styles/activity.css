@@ -71,7 +71,7 @@
     color: var(--call-to-action);
     padding: 10px 20px;
     border-radius: 25px;
-    transition: var(--hover-transition)
+    transition: var(--hover-transition);
 }
 
 .activity-link:hover {
@@ -80,17 +80,20 @@
 }
 
 /* activity image style */
-.activity-img-container {
+.activity-icon-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
-.activity-img {
-    max-width: 100%;
-    height: 30vh;
+.activity-icon {
+    color: var(--text-color-light);
+    height: 128px;
+    width: 128px;
 }
+
 
 @media screen and (max-width: 870px) {
     .activity {

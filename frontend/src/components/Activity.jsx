@@ -17,12 +17,14 @@ function Activity( {activityNumber} ) {
                     </div>
                     <div className="activity-links-container">
                         <div className="activity-link-item">
-                            <Link to={`${activities[activityNumber]["linkTo"]}`} className="activity-link">Learn more...</Link>
+                            <Link to={activities[activityNumber]["linkTo"]} className="activity-link">Learn more...</Link>
                         </div>
                     </div>
                 </div>
-                <div className="activity-img-container">
-                    <img className="activity-img" src={`${activities[activityNumber]["imgPath"]}`} alt="activity-picture" />
+                <div className="activity-icon-container">
+                    <svg className="activity-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d={activities[activityNumber]["iconPath"]}/>
+                    </svg>
                 </div>
             </div>
         </div>
