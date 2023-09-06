@@ -1,7 +1,9 @@
+import ProjectCardWrapper from "../components/ProjectCardWrapper";
+
 function ProjectsView() {
     return (
         <div>
-            <h1>ProjectsView placeholder</h1>
+            <ProjectCardWrapper />
         </div>
 
     )

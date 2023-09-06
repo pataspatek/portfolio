@@ -1,0 +1,19 @@
+.project-card-wrapper-container {
+    padding: 50px 5%;
+}
+
+.project-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+    max-width: var(--width-of-content);
+}
+
+
+@media screen and (max-width: 870px) {
+    .project-card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

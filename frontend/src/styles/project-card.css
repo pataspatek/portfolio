@@ -1,0 +1,28 @@
+/* project-card.css */
+
+.project-card {
+    background-color: #fff; /* Background color for the card */
+    border: 1px solid #ccc; /* Border for the card */
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow for the card */
+    transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+
+    /* Set card dimensions and other styling as needed */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+}
+
+
+.project-card-title {
+    font-size: 25px; /* Font size for the title */
+    font-weight: bold; /* Font weight for the title */
+    /* Add any other title styling as needed */
+}
+
+.project-card-subtitle {
+    font-size: 14px; /* Font size for the subtitle */
+    color: #888; /* Text color for the subtitle */
+    /* Add any other subtitle styling as needed */
+}

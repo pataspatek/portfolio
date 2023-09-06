@@ -21,6 +21,8 @@
     /* Hover transition */
     --hover-transition: all 0.3s ease;
 
+    --width-of-content: 1040px;
+
 }
 
 * {
