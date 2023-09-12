@@ -14,14 +14,16 @@
     --call-to-action-hover: #c0891a;
 
     /* Font size */
-    --title-font-size: 36px;
-    --subtitle-font-size: 18px;
-    --link-font-size: 20px;
+    --title-font-size: 36px; /* For each headline */
+    --header-font-size: 24px; /* Header font size determines the height of header components */ 
+    --link-font-size: 20px; /* For every link on my website */ 
+    --subtitle-font-size: 18px; /* Text font size */
 
     /* Hover transition */
     --hover-transition: all 0.3s ease;
 
-    --width-of-content: 1040px;
+    /* Max width of the content for larger screens */
+    --content-width: 1040px;
 
 }
 

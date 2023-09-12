@@ -2,7 +2,6 @@
 
 :root {
     /* Header dimensions and sizes */
-    --header-font-size: 24px;
     --header-height: calc(var(--header-font-size) * 5);
     --header-photo-height: calc(var(--header-font-size) * 3.5);
     --header-social-icon-height: calc(var(--header-font-size) * 2);
@@ -20,7 +19,7 @@
 
 /* Header container layout */
 .header {
-    max-width: 1040px;
+    max-width: var(--content-width);
     margin: 0 auto;
     display: flex;
 }
