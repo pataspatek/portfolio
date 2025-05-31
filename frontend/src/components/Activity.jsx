@@ -9,9 +9,7 @@ function Activity( {activityNumber, activity} ) {
                 <div className="activity-content">
                     <div className="activity-description">
                         <h1 className="activity-title">{activity.name}</h1>
-                        <p className="activity-subtitle">
-                            {activity.description}
-                        </p>
+                        <p className="activity-subtitle">{activity.description}</p>
                     </div>
                     <div className="activity-links-container">
                         <div className="activity-link-item">
