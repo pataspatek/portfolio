@@ -1,6 +1,8 @@
+import "../styles/content-wrapper.css";
+
 function ContactView() {
     return (
-        <div>
+        <div className="content-wrapper">
             <h1>ContactView placeholder</h1>
         </div>
 

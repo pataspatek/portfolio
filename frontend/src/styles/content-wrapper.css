@@ -1,0 +1,8 @@
+/* Style for every view of the page. */
+
+/* Extends the content of the page to the full view between header and footer */
+.content-wrapper {
+        min-height: calc(100vh - 120px - 100px);
+}
+
+
