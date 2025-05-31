@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
+import profilePicture from "../../assets/images/profile-picture.jpg";
+
 import '../styles/header.css'
 
 function Header() {
@@ -19,7 +21,7 @@ function Header() {
                 {/* Profile Picture */}
                 <div className="profile-picture-container">
                     <Link to="/" className="profile-picture-link">
-                        <img className="profile-picture-image" src="../../assets/images/profile-picture.jpg" alt="profile picture"/>
+                        <img className="profile-picture-image" src={profilePicture} alt="profile picture"/>
                     </Link>
                 </div>
                 {/* Navigation Toggle */}
