@@ -11,6 +11,7 @@ function Hero() {
                 <div className="hero-content">
                     <div className="hero-description">
                         <h1 className="hero-title">Patrik Pátek</h1>
+                        <h2>TEST</h2>
                         <p className="hero-subtitle">
                             Meet Patrik Pátek, a self-taught programmer who defied conventional education. 
                             With an insatiable curiosity, they delved into coding, mastering languages like Python,
