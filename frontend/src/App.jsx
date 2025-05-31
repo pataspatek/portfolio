@@ -7,6 +7,7 @@ import HomeView from "./views/HomeView"
 import ProjectsView from "./views/ProjectsView"
 import AboutView from "./views/AboutView"
 import ContactView from "./views/ContactView"
+import NotFoundView from "./views/NotFoundView"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                       <Route path="/projects" element={<ProjectsView />}/>
                       <Route path="/about" element={<AboutView />}/>
                       <Route path="/contact" element={<ContactView />}/>
+                      <Route path="*" element={<NotFoundView />}/>
                 </Routes>
                 <Footer />
             </HashRouter>

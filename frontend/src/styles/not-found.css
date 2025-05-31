@@ -1,0 +1,7 @@
+.number-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px - 100px);
+    gap: 20px;
+}
