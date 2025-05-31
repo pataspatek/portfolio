@@ -82,7 +82,11 @@
 
 .nav-link:hover {
     /* Navigation link hover effect */
-    color: var(--call-to-action);
+    color: var(--call-to-action-hover);
+}
+
+.nav-link.active {
+    color: var(--call-to-action-hover);
 }
 
 /* Social links styles */

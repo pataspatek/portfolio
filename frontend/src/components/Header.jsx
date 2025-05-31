@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import '../styles/header.css'
 
 function Header() {
+
+    const location = useLocation();
 
     const closeNavContainer = () => {
         const navToggle = document.getElementById("nav-toggle");
@@ -27,16 +28,16 @@ function Header() {
                     {/* Navigation Links */}
                     <ul className="nav-links-list">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" onClick={closeNavContainer}>Home</Link>
+                            <Link to="/" className={`nav-link ${location.pathname === "/" ? 'active' : ''}`} onClick={closeNavContainer}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/projects" className="nav-link" onClick={closeNavContainer}>Projects</Link>
+                            <Link to="/projects" className={`nav-link ${location.pathname === "/projects" ? 'active' : ''}`} onClick={closeNavContainer}>Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/about" className="nav-link" onClick={closeNavContainer}>About</Link>
+                            <Link to="/about" className={`nav-link ${location.pathname === "/about" ? 'active' : ''}`} onClick={closeNavContainer}>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link" onClick={closeNavContainer}>Contact</Link>
+                            <Link to="/contact" className={`nav-link ${location.pathname === "/contact" ? 'active' : ''}`} onClick={closeNavContainer}>Contact</Link>
                         </li>
                     </ul>
                     {/* Social Links */}
