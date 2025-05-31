@@ -9,7 +9,7 @@ function Summary() {
     return (
         <div className="summary-container">
             {activities.map((activity, index) => (
-                <Activity key={index} activityNumber={index} />
+                <Activity key={index} activityNumber={index} activity={activity}/>
             ))}
         </div>
     )
