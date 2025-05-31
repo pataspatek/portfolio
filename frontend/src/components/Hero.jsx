@@ -22,7 +22,7 @@ function Hero() {
                             <Link to="/about" className="hero-link">Learn more about me</Link>
                         </div>
                         <div className="hero-link-item">
-                            <Link to="/project" className="hero-link">My work</Link>
+                            <Link to="/projects" className="hero-link">My work</Link>
                         </div>
                     </div>
                 </div>
